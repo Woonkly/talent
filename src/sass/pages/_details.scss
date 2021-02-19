@@ -1,0 +1,186 @@
+/**
+ * @version 1.0.0
+ * @description Styles for /details/:id page
+*/
+
+.page-details {
+
+    min-height: 85vh;
+    padding: 3rem 0;
+    background-color: var(--white);
+
+    .__page__head {
+
+        width: 80%;
+        margin-bottom: 4rem;
+
+        .__return {
+
+            a { color: #000000; }
+
+        }
+
+        .__title {
+
+            h1 {
+
+                font-size: 3.5rem;
+                color: #171727;
+
+            }
+
+        }
+
+        .__resume {
+
+            .__element {
+
+                span { color: #171727; }
+
+                img { height: 1rem; }
+
+                &.--location { margin-left: 0.75rem; }
+
+            }
+
+            .__dot {
+                
+                width: 0.25rem;
+                height: 0.25rem;
+                margin: 0 0.75rem;
+                border-radius: 50%;
+                background-color: #171727;
+
+            }
+
+        }
+
+    }
+
+    .__contents {
+
+        @import '../components/jobs/index';
+
+    }
+
+    .__cta {
+
+        padding: 5rem 0;
+        background-color: var(--primary);
+
+        .__title {
+
+            h3 { font-size: 1.6rem; }
+
+        }
+
+        .__email {
+
+            a { font-size: 2rem; }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        
+        .__page__head { width: 100%; }
+
+    }
+
+    @media screen and (max-width: 586px) {
+
+        .__page__head {
+
+            .__title {
+
+                h1 { font-size: 2.5rem; }
+
+            }
+
+            .__resume {
+
+                flex-wrap: wrap;
+
+                .__element {
+    
+                    span { font-size: $fontText; }
+                    margin: 0.25rem 0;
+    
+                    img { height: 0.8rem; }
+
+                    &.--remote { margin-right: 0.75rem; }
+
+                    &.--location { margin-left: 0; }
+    
+                }
+    
+            }
+
+        }
+
+        .__cta {
+
+            padding: 2rem 0;
+    
+            .__title {
+    
+                h3 { font-size: 1.3rem; }
+    
+            }
+    
+            .__email {
+    
+                a { font-size: 1.6rem; }
+    
+            }
+    
+        }
+
+    }
+
+}
+
+html[data-theme='dark'] {
+
+    .page-details {
+
+        background-color: #171727;
+
+        .__page__head {
+    
+            .__title {
+    
+                h1 { color: #ffffff; }
+    
+            }
+
+            .__return {
+
+                a { color: #ffffff; }
+    
+            }
+        
+            .__resume {
+    
+                .__element {
+    
+                    span { color: #ffffff; }
+    
+                }
+    
+                .__dot { background-color: #ffffff; }
+    
+            }
+
+        }
+
+        .__contents {
+
+            @import '../components/jobs/dark';
+    
+        }
+
+    }
+
+}

@@ -1,0 +1,94 @@
+/*
+ * @version 1.0.0
+ * @author Woonkly - Sergio
+ * @description Color Scheme
+*/
+
+:root {
+
+    --primary:       #218cff;
+    --primary-alt:   #288091;
+    --secondary:     #263d54;
+    --secondary-alt: #516376;
+    --success:       #00c671;
+    --warning:       #f39c12;
+    --danger:        #c0392b;
+    --info:          #258395;
+    --gold:          #a88e53;
+
+    --black:     #1b1d31;
+    --white:     #FFFFFF;
+    --gray:      #6c6c6c;  
+    --darkgray:  #4b4b4b;
+    --lightgray:  #b1b1b1;
+
+    --darkBlue:  #263d54;
+    --darkAqua:  #258395;
+    --aqua:      #33c8a3;
+    --lightBg:   #ebf3f5;
+
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-primary-alt {
+    color: var(--primary-alt);
+}
+
+.color-secondary {
+    color: var(--secondary);
+}
+
+.color-secondary-alt {
+    color: var(--secondary-alt);
+}
+
+.color-success {
+    color: var(--success);
+}
+
+.color-warning {
+    color: var(--warning);
+}
+
+.color-danger {
+    color: var(--danger);
+}
+
+.color-info {
+    color: var(--info);
+}
+
+.color-gold {
+    color: var(--gold);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-darkgray {
+    color: var(--darkgray);
+}
+
+.color-lightgray {
+    color: var(--lightgray);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+
+
+html[data-theme='dark'] {
+
+    --black: white;
+
+}

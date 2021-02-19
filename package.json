@@ -1,0 +1,17 @@
+{
+  "name": "careers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tanem/react-nprogress": "^3.0.55",
+    "next": "10.0.7",
+    "node-sass": "^4.14.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}

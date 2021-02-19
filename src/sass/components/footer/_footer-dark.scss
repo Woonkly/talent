@@ -1,0 +1,30 @@
+/**
+ * @version 1.0.0
+ * @description Styles for Footer in Dark Theme
+*/
+
+footer {
+
+    background-color: #1b1d31;
+
+    .left {
+
+        a {
+
+            color: #ffffff;
+
+            &.color-primary { color: var(--primary); }
+
+        }
+
+    }
+
+    .middle {
+
+        a { color: #ffffff; }
+
+        span { color: #ffffff; }
+
+    }
+
+}

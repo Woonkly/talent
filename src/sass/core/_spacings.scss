@@ -1,0 +1,178 @@
+/**
+ * @version 1.0.0
+ * @description Styles for spacings
+*/
+
+
+/*    WHITE SPACES    */
+
+.white-space-4 {
+    height: 4px;
+}
+
+.white-space-8 {
+    height: 8px;
+}
+
+.white-space-16 {
+    height: 16px;
+}
+
+.white-space-24 {
+    height: 24px;
+}
+
+.white-space-32 {
+    height: 32px;
+}
+
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-64 {
+    height: 64px;
+}
+
+
+/*      Margins       */
+
+$marginNormal:       0.5rem;
+$marginMedium:      1rem;
+$marginSemi:        1.5rem;
+$marginLarge:       2rem;
+$marginHuge:        3rem;
+
+.--margin-4 {
+    margin: 0.25rem;
+}
+
+.--margin-8 {
+    margin: 0.5rem;
+}
+
+.--margin-16 {
+    margin: $marginMedium;
+}
+
+.--margin-24 {
+    margin: $marginSemi;
+}
+
+.--margin-32 {
+    margin: $marginLarge;
+}
+
+.--margin-48 {
+    margin: $marginHuge;
+}
+
+.--margin-64 {
+    margin: 4rem;
+}
+
+.--margin-left-4 {
+    margin-left: 0.25rem;
+}
+
+.--margin-left-8 {
+    margin-left: 0.5rem;
+}
+
+.--margin-left-16 {
+    margin-left: 1rem;
+}
+
+.--margin-left-24 {
+    margin-left: 1.5rem;
+}
+
+.--margin-left-32 {
+    margin-left: 2rem;
+}
+
+.--margin-left-48 {
+    margin-left: 3rem;
+}
+
+.--margin-left-64 {
+    margin-left: 4rem;
+}
+
+.--margin-right-4 {
+    margin-right: 0.25rem;
+}
+
+.--margin-right-8 {
+    margin-right: 0.5rem;
+}
+
+.--margin-right-16 {
+    margin-right: 1rem;
+}
+
+.--margin-right-24 {
+    margin-right: 1.5rem;
+}
+
+.--margin-right-32 {
+    margin-right: 2rem;
+}
+
+.--margin-right-48 {
+    margin-right: 3rem;
+}
+
+.--margin-right-64 {
+    margin-right: 4rem;
+}
+
+
+/*      Paddings       */
+
+$paddingNormal: 0.5rem;
+$paddingMedium: 1rem;
+$paddingSemi:   1.5rem;
+$paddingLarge:  2rem;
+$paddingHuge:   3rem;
+
+.--padding-4 {
+    padding: 0.25rem;
+}
+
+.--padding-8 {
+    padding: $paddingNormal;
+}
+
+.--padding-16 {
+    padding: $paddingMedium;
+}
+
+.--padding-24 {
+    padding: $paddingSemi;
+}
+
+.--padding-32 {
+    padding: $paddingLarge;
+}
+
+.--padding-48 {
+    padding: $paddingSemi;
+}
+
+.--padding-64 {
+    padding: 4rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .white-space-48 {
+        height: 32px;
+    }
+    
+    .white-space-64 {
+        height: 48px;
+    }
+
+}

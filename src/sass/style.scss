@@ -1,0 +1,21 @@
+/**
+ * @version 1.0.0
+ * @author Woonkly - Sergio
+ * @description Stylesheet constructor
+*/
+
+@import './core/trejocode';
+@import './core/colors';
+@import './core/fonts';
+@import './core/spacings';
+
+
+@import './components/header/header';
+@import './components/footer/footer';
+@import './components/buttons/buttons';
+
+@import './libs/nprogress';
+
+
+@import './pages/index';
+@import './pages/details';

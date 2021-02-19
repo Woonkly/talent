@@ -1,0 +1,200 @@
+/**
+ * @version 1.0.0
+ * @description Styles for jobs components
+*/
+
+.__container__jobs {
+
+    width: 80%;
+
+    .__divider { border: 0.5px solid #f1f4f8; }
+
+    @media screen and (max-width: 1280px) {
+        
+        width: 100%;
+
+    }
+
+}
+
+.__job__list {
+
+    margin-bottom: $marginLarge;
+    justify-content: space-between;
+
+    .__job__summary {
+
+        .__title {
+
+            h2 { color: #171727; }
+
+        }
+
+        .__job__resume {
+
+            .__element {
+
+                span { color: #171727; }
+
+                img { height: 1rem; }
+
+                &.--location { margin-left: 0.75rem; }
+
+            }
+
+            .__dot {
+                
+                width: 0.25rem;
+                height: 0.25rem;
+                margin: 0 0.75rem;
+                border-radius: 50%;
+                background-color: #171727;
+
+            }
+
+        }
+
+    }
+
+    .__job__cta {
+
+        a {
+
+            border-radius: 2px;
+            color: var(--primary);
+            background-color: transparent;
+            padding: 0.75rem $paddingSemi;
+            border: 2px solid var(--primary);
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        .__job__summary { width: 100%; }
+
+        .__job__cta {
+
+            width: 100%;
+            margin-top: $marginMedium;
+    
+        }
+
+    }
+
+    @media screen and (max-width: 586px) {
+        
+        .__job__summary {
+
+            .__title {
+
+                h2 { font-size: 1.4rem; }
+    
+            }
+
+            .__job__resume {
+
+                flex-wrap: wrap;
+    
+                .__element {
+    
+                    span { font-size: $fontText; }
+                    margin: 0.25rem 0;
+    
+                    img { height: 0.8rem; }
+
+                    &.--remote { margin-right: 0.75rem; }
+
+                    &.--location { margin-left: 0; }
+    
+                }
+    
+            }
+
+        }
+
+        .__job__cta {
+
+            width: 100%;
+            margin-top: $marginMedium;
+    
+        }
+
+    }
+
+}
+
+
+.__container__details {
+
+    width: 80%;
+
+    .__detailed {
+
+        margin-bottom: 3rem;
+
+        .__title {
+
+            h2 { 
+                
+                font-size: 2rem;
+                color: #171727; 
+            
+            }
+
+        }
+
+        .__content {
+
+            p, li {
+
+                width: 90%;
+                color: #171727;
+
+            }
+
+            li { line-height: 2rem; }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        
+        width: 100%;
+
+    }
+
+    @media screen and (max-width: 586px) {
+        
+        .__detailed {
+
+            margin-bottom: 2rem;
+    
+            .__title {
+    
+                h2 { font-size: 1.5rem; }
+    
+            }
+    
+            .__content {
+    
+                p, li { 
+                    
+                    width: 100%; 
+                    font-size: 0.95rem;
+                
+                }
+    
+                ul { margin-left: 0.75rem; }
+
+                li { width: 97%; }
+    
+            }
+    
+        }
+
+    }
+
+}

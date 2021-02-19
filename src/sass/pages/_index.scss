@@ -1,0 +1,97 @@
+/**
+ * @version 1.0.0
+ * @description Styles for / page
+*/
+
+.page-index {
+
+    min-height: 85vh;
+    padding: 3rem 0;
+    background-color: var(--white);
+
+    .__page__head {
+
+        margin-bottom: 4rem;
+
+        .__title {
+
+            width: 80%;
+
+            h1 {
+
+                font-size: 3.5rem;
+                color: #171727;
+
+            }
+
+        }
+
+    }
+
+    .__contents {
+
+        @import '../components/jobs/index';
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        
+        .__page__head {
+    
+            .__title { width: 90%; }
+    
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        
+        .__page__head {
+    
+            .__title { width: 100%; }
+    
+        }
+
+    }
+
+    @media screen and (max-width: 586px) {
+
+        .__page__head {
+
+            .__title {
+
+                h1 { font-size: 2.5rem; }
+
+            }
+
+        }
+
+    }
+
+}
+
+html[data-theme='dark'] {
+
+    .page-index {
+
+        background-color: #171727;
+
+        .__page__head {
+    
+            .__title {
+    
+                h1 { color: #ffffff; }
+    
+            }
+    
+        }
+
+        .__contents {
+
+            @import '../components/jobs/dark';
+    
+        }
+
+    }
+
+}

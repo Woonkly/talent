@@ -1,0 +1,62 @@
+/**
+ * @version 1.0.0
+ * @description Styles for jobs components in darl theme
+*/
+
+.__container__jobs {
+
+    .__divider { border: 0.5px solid #303152; }
+
+}
+
+.__job__list {
+
+    .__job__summary {
+
+        .__title {
+
+            h2 { color: #ffffff; }
+
+        }
+
+        .__job__resume {
+
+            .__element {
+
+                span { color: #ffffff; }
+
+            }
+
+            .__dot { background-color: #ffffff; }
+
+        }
+
+    }
+
+    .__job__cta {
+
+        a { color: #ffffff; }
+
+    }
+
+}
+
+.__container__details {
+
+    .__detailed {
+
+        .__title {
+
+            h2 { color: #ffffff; }
+
+        }
+
+        .__content {
+
+            p, li { color: #ffffff; }
+
+        }
+
+    }
+
+}
