@@ -5,26 +5,20 @@
 */
 
 import { useState, useEffect } from 'react';
-import Layout   from 'components/Layout';
-import { jobs } from 'static/data.json';
 import { useRouter } from 'next/router';
-import JobHead from 'components/Jobs/JobHead';
-import ContainerDetails from 'components/Containers/Jobs/Details';
+import Layout   from 'components/Layout';
+import JobHead  from 'components/Jobs/JobHead';
 import Progress from 'components/Progress';
+import ContainerDetails from 'components/Containers/Jobs/Details';
 
 
 const PageIndex = () => {
 
     const router = useRouter();
+    const [jobs, setJobs] = useState(false);
+    const [index, setIndex] = useState(null);
     const [details, setDetails] = useState({});
     const [isLoading, setIsLoading] = useState(true);
-
-
-    const getDetails = index => {
-            
-        setDetails(jobs[index]);
-
-    };
 
 
     useEffect(() => {
@@ -32,19 +26,43 @@ const PageIndex = () => {
         if (router?.query?.id) {
 
             const { query } = router;
-            getDetails(Number(query.id));
+            setIndex(Number(query.id));
 
         }
 
     }, [router]);
 
+
     useEffect(() => {
 
-        setTimeout(() => {
+        if (jobs && index) { 
 
-            setIsLoading(false);
-            
-        }, 1200);
+            const detailed = jobs?.find(item => item.id === index);
+            detailed && setDetails(detailed);
+        }
+
+    }, [index, jobs]);
+
+
+    useEffect(() => {
+
+        const getDetails = async () => {
+
+			setIsLoading(true);
+
+			try {
+
+		  		const response = await fetch('/static/data.json');
+		  		const json = await response.json();
+		  		setJobs(json?.jobs);
+				setIsLoading(false);
+
+			} catch (error) {
+				setIsLoading(false);
+			}
+		};
+
+        getDetails();
 
     }, []);
 
