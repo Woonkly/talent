@@ -57,18 +57,6 @@ const Header = ({ lang = "es" }) => {
 									<img src = { theme === 'dark' ? "/images/header/moon-dark.svg" : "/images/header/moon-light.svg" } alt = "Tema oscuro" title = "Modo oscuro" />
 							</button>
 						</div>
-                        <div className="__nav-item __lang row align-center">
-							<div className="__icon --lang responsive-img">
-								<img src = { theme === 'dark' ? "/images/header/world-dark.svg" : "/images/header/world-light.svg" } alt = "World Icon" />
-							</div>
-							<div className="--margin-left-8">
-								<Link href = { lang === 'es' ? "/en" : "/" }>
-									<a className="weight-semi color-black">
-										{ lang === 'es' ? "EN" : "ES" }
-									</a>
-								</Link>
-							</div>
-						</div>
 					</nav>
 				</div>
 			</div>
@@ -93,23 +81,6 @@ const Header = ({ lang = "es" }) => {
 							onClick = { _ => setTheme('dark') }>
 							<img src = { theme === 'dark' ? "/images/header/moon-dark.svg" : "/images/header/moon-light.svg" } alt = "Tema oscuro" title = "Modo oscuro" />
 						</button>
-					</div>
-					<div className="__text">
-						<p className = "weight-semi color-black">
-							Language
-						</p>
-					</div>
-					<div className="__nav-item __lang row align-center">
-						<div className="__icon responsive-img">
-							<img src = { theme === 'dark' ? "/images/header/world-dark.svg" : "/images/header/world-light.svg" } alt = "Cambiar idioma" />
-						</div>
-						<div className="--margin-left-8">
-							<Link href = { lang === 'es' ? "/en" : "/" }>
-								<a className="weight-semi color-black">
-									{ lang === 'es' ? "EN" : "ES" }
-								</a>
-							</Link>
-						</div>
 					</div>
 				</nav>
 			</div>

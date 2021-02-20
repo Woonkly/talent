@@ -3,6 +3,8 @@
  * @author Woonkly - Sergio
 */
 
+import { useContext }   from 'react';
+import { ThemeContext } from 'theme/context';
 import Link from 'next/link';
 
 
@@ -14,11 +16,15 @@ import Link from 'next/link';
  * @param { String } location: Location of the job
  */
 const JobHead = ({ title = "", day = "", remote = false, location = "" }) => {
+
+    const { theme } = useContext(ThemeContext);
+
     return (
         <div className="__page__head column">
             <div className="__return row align-center">
                 <Link href = "/">
                     <a>
+                        <img src = { theme === 'dark' ? "/images/header/arrow-left-dark.svg" : "/images/header/arrow-left-light.svg" } alt = "Icono de regresar" className="--margin-right-8" />
                         Más trabajos
                     </a>
                 </Link>
